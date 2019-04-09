@@ -21,8 +21,8 @@ class App < Sinatra::Base
   end
 
   get "/multiply" do
-    @num1 = params[:num1].to_int
-    @num2 = params[:num2]
+    @num1 = params[:num1].to_i
+    @num2 = params[:num2].to_i
     "Hello #{@user_name}!"
   end
 
